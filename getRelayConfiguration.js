@@ -17,12 +17,14 @@ const connectionString =
   process.env["COMMUNICATION_CONNECTION_STRING"] || "<communication service connection string>";
 
 async function getConfig() {
-  const identityClient = new CommunicationIdentityClient(connectionString);
-  const user = await identityClient.createUser();
-  const relayClient = new CommunicationRelayClient(connectionString);
-  const config = await relayClient.getRelayConfiguration(user);
-  var servers = (await config).iceServers;
-  return servers;
+    const relayClient = new CommunicationRelayClient(connectionString);
+    const config = await relayClient.getRelayConfiguration();
+    
+    console.log('Relay config:\n');
+    console.log(config);
+    
+    var servers = config.iceServers;
+    return servers;
 }
 
 module.exports.getConfig = getConfig;

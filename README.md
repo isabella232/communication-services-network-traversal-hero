@@ -1,27 +1,25 @@
 # Azure Communication Network Traversal sample
 
-## Getting Started
-
 ### Prerequisites
 
-- You need Node.js
-- Firefox, Edge or Chrome
-- Computer with video camera
-- A Communication Services resource to get the Connection String.
+You need Node.js
+Firefox, Edge or Chrome
+Computer with camera
+A Communication Services resource, you will need the Connection String.
 
-### Installation
+### Installing
 
-- In an Administrator Powershell go to the sample dir and run the following
+- In a Powershell Terminal go to the sample dir and install the following
 
 npm install
 
-### Setup
+## Setup
 
 - Create a Communication Services resource using your personal subscription. See here for details:
 https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
 - Go to the .env (rename sample.env to .env) file of the sample and change the value of COMMUNICATION_CONNECTION_STRING to your connection string (from the Communication Services resource)
-- 
-### Quickstart
+
+## Usage
 
 - Execute: node .\index.js
 - Open your browser, if you are using Mozilla, in the search bar type about:config and search for relay and change it's value to true
@@ -29,6 +27,7 @@ https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/create
 - Click get video on both tabs and allow the browser to use your camera and audio
 - Click call and you should see the stream (two videos on the same tab)
 
-## Resources
 
-- https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/communication/communication-network-traversal
+Microsoft docs: https://docs.microsoft.com/en-us/javascript/api/overview/azure/communication-network-traversal-readme?view=azure-node-preview
+Azure SDK code: https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/communication/communication-network-traversal
+Azure SDK samples: https://docs.microsoft.com/en-us/samples/azure/azure-sdk-for-js/communication-network-traversal-javascript/

@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@azure/communication-identity": "^1.0.0",
-    "@azure/communication-network-traversal": "^1.0.0-beta.1",
+    "@azure/communication-network-traversal": "^1.0.0-beta.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "socket.io": "^3.1.2"
