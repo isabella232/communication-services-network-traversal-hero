@@ -1,5 +1,5 @@
 {
-  "name": "acs-turn-quickstart-cs",
+  "name": "acs-turn-quickstart-js",
   "version": "1.0.0",
   "description": "Basic app that shows the usage of Communication Network Traversal APIs",
   "main": "index.js",

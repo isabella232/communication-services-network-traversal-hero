@@ -10,7 +10,7 @@
 
 ### Installing
 
-- In a Powershell Terminal go to the sample dir and install the following
+- In a Powershell Terminal go to the sample dir and run the following command
 
 npm install
 
