@@ -1,57 +1,33 @@
-# Project Name
-
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
+# Azure Communication Network Traversal sample
 
 ### Prerequisites
 
-(ideally very short, if any)
+- Create an Azure account with an active subscription. For details, see [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). 
+- Install [Node.js](https://nodejs.org/en/download/) Active LTS and Maintenance LTS versions (12.0.0 recommended).
+- Create an Azure Communication Services resource. For details, see [Create an Azure Communication Resource](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp). You will need the connection string for this sample.
+- Firefox, Edge or Chrome
+- Computer with a camera
 
-- OS
-- Library version
-- ...
+### Installing
 
-### Installation
+- In a Powershell Terminal go to the sample dir and run the following command
 
-(ideally very short)
+npm install
 
-- npm install [package name]
-- mvn install
-- ...
+## Setup
 
-### Quickstart
-(Add steps to get up and running quickly)
+- Go to the .env (rename sample.env to .env) file of the sample and change the value of COMMUNICATION_CONNECTION_STRING to your connection string (from the Communication Services resource)
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+## Usage
+
+[Firefox Only] media.peerconnection.ice.relay_only needs to be enabled. In your browser search bar type about:config. Click Accept the Risk and Continue. Search for media.peerconnection.ice.relay_only and change its value to true.
+
+- Execute: node .\index.js
+- Open two tabs and go to http://localhost:3000/ in both of them
+- Click get video on both tabs and allow the browser to use your camera and audio
+- Click call and you should see the stream (two videos on the same tab)
 
 
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+Microsoft docs: https://docs.microsoft.com/en-us/javascript/api/overview/azure/communication-network-traversal-readme?view=azure-node-preview
+Azure SDK code: https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/communication/communication-network-traversal
+Azure SDK samples: https://docs.microsoft.com/en-us/samples/azure/azure-sdk-for-js/communication-network-traversal-javascript/
