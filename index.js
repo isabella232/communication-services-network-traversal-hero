@@ -23,10 +23,10 @@ io.on('connection', function(socket) {
     // When a client tries to join a room, only allow them if they are first or second in the room. 
     // Otherwise it is full.
     socket.on('join', function(room) {
-        var clients = io.sockets.adapter.rooms[room];
-        var numClients = (typeof clients !== 'undefined') ? clients.length : 0;
+        const clients = io.sockets.adapter.rooms[room];
+        const numClients = clients?.length ?? 0;
         
-        if (numClients == 0) {
+        if (numClients === 0) {
             socket.join(room);
         } else if (numClients === 1) {
             socket.join(room);

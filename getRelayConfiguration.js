@@ -5,7 +5,6 @@
 * @summary Get a Relay configuration
 */
 
-const { CommunicationIdentityClient } = require("@azure/communication-identity");
 const { CommunicationRelayClient } = require("@azure/communication-network-traversal");
 
 // Load the .env file if it exists
@@ -23,8 +22,7 @@ async function getConfig() {
     console.log('Relay config:\n');
     console.log(config);
     
-    var servers = config.iceServers;
-    return servers;
+    return config.iceServers;
 }
 
 module.exports.getConfig = getConfig;

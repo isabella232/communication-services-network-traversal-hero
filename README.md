@@ -2,10 +2,11 @@
 
 ### Prerequisites
 
-You need Node.js
-Firefox, Edge or Chrome
-Computer with camera
-A Communication Services resource, you will need the Connection String.
+- Create an Azure account with an active subscription. For details, see [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). 
+- Install [Node.js](https://nodejs.org/en/download/) Active LTS and Maintenance LTS versions (12.0.0 recommended).
+- Create an Azure Communication Services resource. For details, see [Create an Azure Communication Resource](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp). You will need the connection string for this sample.
+- Firefox, Edge or Chrome
+- Computer with a camera
 
 ### Installing
 
@@ -15,8 +16,6 @@ npm install
 
 ## Setup
 
-- Create a Communication Services resource using your personal subscription. See here for details:
-https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
 - Go to the .env (rename sample.env to .env) file of the sample and change the value of COMMUNICATION_CONNECTION_STRING to your connection string (from the Communication Services resource)
 
 ## Usage
