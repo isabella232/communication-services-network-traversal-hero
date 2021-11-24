@@ -20,8 +20,9 @@ npm install
 
 ## Usage
 
+[Firefox Only] media.peerconnection.ice.relay_only needs to be enabled. In your browser search bar type about:config. Click Accept the Risk and Continue. Search for media.peerconnection.ice.relay_only and change its value to true.
+
 - Execute: node .\index.js
-- Open your browser, if you are using Mozilla, in the search bar type about:config and search for relay and change it's value to true
 - Open two tabs and go to http://localhost:3000/ in both of them
 - Click get video on both tabs and allow the browser to use your camera and audio
 - Click call and you should see the stream (two videos on the same tab)
